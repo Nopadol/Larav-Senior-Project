@@ -1,0 +1,179 @@
+body {
+  background-color: white !important;  
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+
+.body {
+	background-color: white !important;
+    position: absolute;
+    z-index: 2;
+}
+.custom-color{
+ 	background-color: #009688 !important;
+    background-size: 100% 0px;
+    position: relative;
+    height: 49px;
+    z-index: 9;
+}
+.bar {
+    background-size: 100% 0px;
+    position: relative;
+    z-index: 9;
+}
+
+
+.float-button {
+ 
+background-color:#303f9f;
+opacity: 0.9;
+color: white;
+text-shadow: 1px 1px #9E9E9E;
+border-radius: 50%;
+/*border-radius:15% 0 0 0;*/
+width: 0px;
+padding: 30px;
+font-size: 40px;
+position: absolute;
+bottom : 2em; /* Adjust height */
+right: 1em; /* Adjust position */
+z-index: 9999;
+}
+ 
+.float-button .height_fix {
+  margin-top: 100%;
+  border: 1px solid red;
+}
+ 
+.float-button .content {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin-top: -20px;
+  color: white;
+}
+
+/*Slide Tab CSS*/
+ion-slide {
+    background-color: #fff;
+}
+
+ion-slide:nth-child(2n) {
+    background-color: #fff;
+}
+
+.slider {
+    height: 100%;
+}
+
+.slidingTabs {
+    height: 48px;
+    position: relative;
+    z-index: 10;
+}
+
+.slidingTabs .scroll {
+    height: auto;
+    min-width: 100%;
+}
+
+.slidingTabs ul {
+    background-color: #009688;
+    height: 48px;
+    box-shadow: 0px 2px 7px #616161; 
+    z-index: 9;
+}
+
+.slidingTabs ul li {
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    float: left;
+    margin: 0;
+    padding: 0 12px 20px 12px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: rgba(5, 5, 5, 0.6);
+    -webkit-transition: color .25s ease-in-out;
+    transition: color .25s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.slidingTabs ul li.tab-active {
+    color: #fff;
+}
+
+.slidingTabs ul li .ink {
+    display: block;
+    position: absolute;
+    background: rgba(50, 50, 50, 0.4);
+    border-radius: 100%;
+    transform: scale(0);
+}
+
+.slidingTabs ul li .ink.animate {
+    -webkit-animation: ripple 0.65s linear;
+    animation: ripple 0.65s linear;
+}
+
+.slidingTabs .tab-indicator-wrapper {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0);
+    -webkit-transform: translateY(-2px);
+    position: absolute;
+}
+
+.slidingTabs .tab-indicator-wrapper .tab-indicator {
+    height: 100%;
+    background-color: #fff;
+    width: 70px;
+    position: relative;
+}
+
+@-webkit-keyframes ripple {
+    100% {
+        opacity: 0;
+        transform: scale(2.5);
+    }
+}
+.profile {
+    background: url("../img/profilebg.jpg") no-repeat;
+    display: block; 
+    line-height: 100px;
+}
+.profile .profilepicture {
+    width: 100px;
+    height: 100px;
+    margin-left: 35%;
+    margin-top: 10px;
+    border-radius: 50%;
+    border-color: red !important;
+}
+.custom-bar{
+    background-color: #8BC34A !important;
+}
+.checkbox input:before, .checkbox-icon:before .checkbox-like{
+    border: transparent;
+    background: url("../img/loving34.png") center no-repeat;
+}
+.checkbox input:after, .checkbox-icon:after .checkbox-like{
+    border: transparent;
+}
+.checkbox input:checked:before, .checkbox input:checked + .checkbox-icon:before {
+    background: transparent;
+    border-color: transparent;
+    background: url("../img/heart393.png") center no-repeat;
+}
+
+.popover {
+  width: 100px !important;  
+  height: 100px !important;
+}
+.statbtn{
+    font-size: 70px;
+    padding-left: 40px;
+}

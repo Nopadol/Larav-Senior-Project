@@ -1,0 +1,30 @@
+<link rel="stylesheet" type="text/css" href="css/loginstyle.css">
+<link rel="stylesheet" type="text/css" href="lib/Ionicons/css/ionicons.css">
+<ion-view class="pane">
+    <ion-content>
+        <span class="logo">L A R A V</span>
+        <span class="detail">Let's take a ride with the bike</span>
+        <div ng-controller ="LoginCtrl">
+            <button class="button button-block button-light custom-google-button">
+                <i class="icon ion-social-google"></i>&nbsp;&nbsp;&nbsp;&nbsp;Sign in with Google
+            </button>
+            <center>
+                <button class="button button button-positive custom-facebook-button" ng-click="facebooklogin()" href="templates/main.html">
+                    <i class="icon ion-social-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;Facebook
+                </button>
+                <button class="button button button-calm custom-twitter-button" ng-click="twitterlogin()" >
+                    <i class="icon ion-social-twitter"></i>&nbsp;&nbsp;&nbsp;&nbsp;Twitter
+                </button>
+            </center>
+            <center>
+                <button class="button button button-clear button-calm custom-signinemail-button">
+                    Sign In with Email
+                </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp;
+                <button class="button button button-clear button-calm custom-createaccount-button">
+                    Create Account
+                </button>
+            </center>
+        </div>
+        
+    </ion-content>
+</ion-view>

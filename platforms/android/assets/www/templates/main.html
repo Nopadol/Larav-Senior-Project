@@ -1,0 +1,35 @@
+<link rel="stylesheet" type="text/css" href="css/mainstyle.css">
+<link rel="stylesheet" type="text/css" href="lib/Ionicons/css/ionicons.css">
+<body ng-app="starter" ng-controller="LoginCtrl">
+    <ion-header-bar align-title="left" class="bar-positive custom-color">
+          <div class="buttons">
+            <button class="button" ng-click="doSomething()">Left Button</button>
+          </div>
+          <h1 class="title">Title!</h1>
+          <div class="buttons">
+            <button class="button">Right Button</button>
+          </div>
+    </ion-header-bar>
+    <ion-view class="pane">
+          <br><br>
+          <div ng-hide="authData" class="card" ng-click="login()">
+        <button class="item">
+        Log In with Facebook
+        </button>
+      </div>
+
+      <div class="card" ng-show="authData">
+        <div class="item item-text-wrap">
+          Hello {{authData.facebook.displayName}} !
+        </div>
+      </div>
+          <div class="item item-text-wrap">
+          Name : {{authData.facebook.displayName}}<br>
+          id : {{authData.facebook.id}}<br>
+          <img src="{{authData.facebook.profileImageURL}}"></img>
+          
+          <button ng-click="logout()">
+              logout
+          </button>
+    </ion-view>
+</body

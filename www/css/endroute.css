@@ -1,0 +1,55 @@
+body {
+  background-color: white !important;  
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+.customcolor{
+	background-color: #009688 !important;
+    background-size: 100% 0px;
+    height: 49px;
+
+}
+.custom-subheader-bar{
+	background-color: #009688 !important;
+	background-size: 100% 0px;
+	position: relative;
+    height: 170px;
+    z-index: 5;
+    top: 48px;
+    border:0px;
+    box-shadow: 0px 2px 7px #616161;
+}
+#map {
+  top:48px;
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.scroll {
+  height: 100%;
+}
+
+.custombtn{
+  background-color: #FF5722 !important;
+  background-size: 100% 0px;
+  box-shadow: 0px 5px 5px #616161; 
+  border:0px;
+  border-radius: 10px;
+}
+.routeinfo{
+
+  top:10px;
+  background: url("../img/route1.png") no-repeat;
+    display: block; 
+    line-height: 120px;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #636363 !important;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #636363 !important;
+}
+.custombtnshare{
+	border-radius: 20px;
+}

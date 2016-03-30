@@ -1,0 +1,54 @@
+.loginpage {
+        background: url("../img/parked-bike.jpg") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+  	}
+.logo {
+	font-size: 12vw;
+	margin-top: 25%;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	display:block;
+}
+.detail{
+	font-size: 4vw;
+	margin-top: 5%;
+	display:block;
+	text-align: center;
+	color: white;
+}
+button.custom-google-button{
+	background-color: white !important;
+	font-size: 3vh;
+	top: 40vh;
+	margin-left: 5vw;
+	display:block;
+	color: #FF5722 !important;
+  	width: 90%;
+}
+button.custom-facebook-button{
+	font-size: 3vh;
+	top: 40vh;
+	width: 46%;
+	margin-right: 0.5vw;
+}
+button.custom-twitter-button{
+	font-size: 3vh;
+	top: 40vh;
+	width: 42%;
+	margin-left: 0.5vw;
+}
+button.custom-signinemail-button{
+	font-size: 16px;
+	top: 45vh;
+	color: white !important;
+	text-shadow: 1px 1px #9E9E9E;
+}
+button.custom-createaccount-button{
+	font-size: 16px;
+	top: 45vh;
+	color: white !important;
+	text-shadow: 1px 1px #9E9E9E;
+}

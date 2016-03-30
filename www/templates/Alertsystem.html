@@ -1,0 +1,37 @@
+<link rel="stylesheet" type="text/css" href="css/alert.css">
+<link rel="stylesheet" type="text/css" href="lib/Ionicons/css/ionicons.css">
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDl-wSDkb6f6k3InFqvaZnwLIX7Ruo3yus&sensor=true"></script>
+<body ng-app = "starter" ng-controller="alertCtrl">
+	<ion-header-bar align-title="left" class="bar customcolor" style="border-bottom:0px;" >
+          <div class="buttons">
+            <button class="button button-clear" ng-click="goMain()" style="font-size:30px;color:white;"><i class='ion-arrow-left-c'></i></button>
+          </div>
+          <h4 style ="margin-left:10px;color:white;"> Alert Notification </h4>
+
+    </ion-header-bar>
+     <div ng-controller="MapCtrl" id="map" data-tap-disabled="true"></div>
+   	<div class="float-buttons" ng-click="chooseroutes()">
+            <span class="height-fix">
+             <a class="content">
+              <i class="ion-ios-redo"> </i>
+             </a>
+            </span>
+    </div>
+    <div class="profile">
+    	<li style="border:0px;background:transparent;"class="item item-avatar" >
+              
+              <img ng-src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/12122503_10201223200179799_8619187008466536527_n.jpg?oh=5be0a693f71fe41868e1608f8e372e55&oe=57208040&__gda__=1457570581_cb95e73db6cbe2d50d9bc28f011969c7"style="margin-top:0px;">
+               <p style="margin-top:10px;padding-left:80px;color:white; font-size:20px;">IT KMITL</p>
+              
+                  
+          </li>
+           <button class="button button-positive custombtn2"  style="margin-top:20px;margin-left:20px;font-size:20px;color:white;"><i class='ion-android-call'></i> CALL HIM</button>
+    			<button class="button button-positive custombtn2"  style="margin-top:20px;margin-left:20px;font-size:20px;color:white;"><i class='ion-android-list'></i> CONTACT</button>
+    </div>
+     <ion-footer-bar class="bar bar-footer bar-balanced customfooter">
+    <label class="item item-input" style="background-color: #9E9E9E !important;border:0px;width:90%;height:auto;">
+      <input type="text" placeholder="Message">
+      </label>
+      <button class="button button-clear" style="font-size:30px;color:white;"><i class='ion-android-send'></i></button>
+  </ion-footer-bar>
+</body>

@@ -1,0 +1,56 @@
+<link rel="stylesheet" type="text/css" href="css/routestyle.css">
+<link rel="stylesheet" type="text/css" href="lib/Ionicons/css/ionicons.css">
+<body ng-app="starter" ng-controller="routeCtrl">
+	<ion-header-bar align-title="left" class="bar customcolor" style="border-bottom:0px;" >
+          <div class="buttons">
+            <button class="button button-clear" ng-click="goroute()" style="font-size:30px;color:white;"><i class='ion-arrow-left-c'></i></button>
+          </div>
+          <h4 style ="margin-left:10px;color:white;"> Sky Lane Suwannabumi </h4>
+
+    </ion-header-bar>
+     <ion-scroll direction="y" style="height: 100%">
+    <div class="routeinfo">
+    		
+           <h4 style="padding-top:70px;font-size:20px;"align="center">Sky Lane Suwannabumi</h4>
+           <h4 style="padding-top:5px;font-size:15px;padding-bottom:10px;"align="center">Distance: 30km</h4>
+     </div >
+    
+          <div class="list" style="margin-top:-10px;">
+            <a class="item item-avatar" href="#" >
+
+              <img style="margin-left:20px;top:10px;"ng-src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/12122503_10201223200179799_8619187008466536527_n.jpg?oh=5be0a693f71fe41868e1608f8e372e55&oe=57208040&__gda__=1457570581_cb95e73db6cbe2d50d9bc28f011969c7">
+              <div class="row">
+                <div class="col-10">
+                    <h4 style="margin-left:-10px;font-size:20px;color:red;">#1</h4>
+                </div>
+                <div class="col-80">
+                    <h4 style="padding-left:35px;font-size:17px;">Nopadol Sooktieb</h4>
+                </div>
+                <div class="col-30">
+                    <h4 style="font-size:15px;color:grey;">20m</h4>
+                </div>
+              </div>
+            </a>
+
+            <a class="item item-avatar" href="#" >
+
+              <img style="margin-left:20px;top:10px;"ng-src="https://scontent-sin1-1.xx.fbcdn.net/hphotos-xpl1/v/t1.0-9/12079442_1069109349774076_6308384678668705096_n.jpg?oh=fd20383f25191bb5588020ae7b735145&oe=56E049C6">
+              <div class="row">
+                <div class="col-10">
+                    <h4 style="margin-left:-10px;font-size:20px;color:red;">#2</h4>
+                </div>
+                <div class="col-80">
+                    <h4 style="padding-left:35px;font-size:17px;">Warakorn Weerathammo</h4>
+                </div>
+                <div class="col-30">
+                    <h4 style="font-size:15px;color:grey;">21m</h4>
+                </div>
+              </div>
+            </a>
+
+          </div>
+          <!-- <ion-infinite-scroll on-infinite="loadMore()" distance="1%"></ion-infinite-scroll> -->
+
+
+        </ion-scroll>
+</body>

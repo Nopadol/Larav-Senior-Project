@@ -1,0 +1,45 @@
+<link rel="stylesheet" type="text/css" href="css/chooseroutestyle.css">
+<link rel="stylesheet" type="text/css" href="lib/Ionicons/css/ionicons.css">
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDl-wSDkb6f6k3InFqvaZnwLIX7Ruo3yus&sensor=true"></script>
+<body ng-app="starter" ng-controller="chooseRouteCtrl">
+	<ion-header-bar align-title="left" class="bar customcolor" style="border-bottom:0px;" >
+          <div class="buttons">
+            <button class="button button-clear" ng-click="goMain()" style="font-size:30px;color:white;"><i class='ion-arrow-left-c'></i></button>
+          </div>
+          <h4 class ="title" style="margin-left:10px;color:white;font-size:20px;">Direction</h4>
+          <button class="button button-clear" ng-click="goendroute()" style="font-size:25px;color:white;"><i class='ion-close-round'></i></button>
+          
+
+    </ion-header-bar>
+    <div class="bar bar-subheader bar-positive custom-subheader-bar ">
+               <div class="row">
+               		<div class="col-40">
+               			<h4 style="margin-left:10px;font-size:20px;">Start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </h4>
+               		</div>
+               		<div class="col-60">
+               			 <h4 style="margin-left:10px;font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;00 : 00 m</h4> 
+               		</div>
+               </div>
+               <div class="row">
+               		<div class="col-40">
+               			<h4 style="margin-left:10px;font-size:20px;">Speed&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </h4>
+               		</div>
+               		<div class="col-60">
+               			 <h4 style="margin-left:10px;font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 km/h</h4> 
+               		</div>
+               </div>  
+               <div class="row">
+                  <div class="col-40">
+                    <h4 style="margin-left:10px;font-size:20px;">Distance&nbsp;&nbsp;: </h4>
+                  </div>
+                  <div class="col-60">
+                     <h4 style="margin-left:10px;font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 km</h4> 
+                  </div>
+               </div> 
+		
+
+   </div>
+   <div ng-controller="MapCtrl" id="map" data-tap-disabled="true">
+   </div>
+
+</body>

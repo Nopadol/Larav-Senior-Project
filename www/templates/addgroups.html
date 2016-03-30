@@ -1,0 +1,50 @@
+<link rel="stylesheet" type="text/css" href="css/group.css">
+<link rel="stylesheet" type="text/css" href="lib/Ionicons/css/ionicons.css">
+<body ng-app="starter" ng-controller="groupCtrl">
+	<ion-header-bar align-title="left" class="bar customcolor" style="border-bottom:0px;" >
+          <div class="buttons">
+            <button class="button button-clear" ng-click="goMain()" style="font-size:30px;color:white;"><i class='ion-arrow-left-c'></i></button>
+
+          </div>
+          <h4 style ="margin-left:10px;color:white;"> Add New Groups </h4>
+            <button class="button button-clear"  style="margin-left:150px;font-size:25px;color:white;"><i class='ion-android-more-vertical'></i></button>
+     </ion-header-bar>
+     <ion-scroll direction="y" style="height: 100%">
+    	<div class="list">
+
+		  <div class="item item-divider">
+		   	Group Information
+		  </div>
+
+		  <a class="item item-avatar" href="#">
+		    <img ng-src="">
+		  </a>
+		  <a class="item" href="#">
+		   	Group Name
+		  </a>
+		  <a class="item" href="#">
+		    Group Description
+		  </a>
+		 
+		  
+		  <div class="item item-divider">
+		   	Member
+		  </div>
+		  <a class="item" href="#">
+		    Invite Members 
+		  </a>
+		  
+
+		  <div class="item item-divider">
+		   	Permission
+		  </div>
+		  <a class="item" href="#">
+		    Rules
+		  </a>
+		 
+
+		</div>
+			<button class="button button-positive"  style="margin-top:5px;margin-left:90px;font-size:15px;color:black;width:50%;border-radius:10px;background-color:#fff !important;border-color:#009688 !important;">Add Group</button>
+      </div>
+	</ion-scroll>
+</body>

@@ -1,0 +1,29 @@
+<link rel="stylesheet" type="text/css" href="lib/Ionicons/css/ionicons.css">
+<link rel="stylesheet" type="text/css" href="css/adddatastyle.css">
+<body ng-app="starter" ng-controller="adddataCtrl">
+<ion-view class = "adddatapage">
+	<ion-header-bar align-title="left" class="bar customcolor" style="border-bottom:0px;"
+          <div class="buttons">
+            <button class="button button-clear" ng-click="logout()" style="font-size:40px;color:white;"><i class='ion-arrow-left-c'></i></button>
+          </div>
+    </ion-header-bar>
+     <h1 align="center" style="margin-top:10%;font-size:30px;">Subscribe your device</h1>
+	 <div class="list list-inset" style="margin-left:10%;margin-right:10%;border-radius:10px;">
+	  <label class="item item-input">
+	    <input type="text" placeholder="Device Name">
+	  </label>
+	  <label class="item item-input">
+	    <input type="text" placeholder="node.it.kmitl.ac.th:1884">
+	  </label>
+	  <label class="item item-input">
+	    <input type="text" placeholder="Topic/name[1]">
+	  </label>
+	  <label class="item item-input">
+	    <input type="text" placeholder="Topic/name[2]">
+	  </label>
+	</div>
+	<button ng-click="goMain()" class="button button button-positive custombtn" style="margin-top:20%;margin-left:25%;" >
+  		Start using your app ! 
+	</button>
+</ion-view>
+</body>

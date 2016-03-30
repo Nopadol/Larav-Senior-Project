@@ -1,0 +1,275 @@
+<link rel="stylesheet" type="text/css" href="css/mainstyle.css">
+<link rel="stylesheet" type="text/css" href="lib/Ionicons/css/ionicons.css">
+<script src="js/slidingTabsDirective.js"></script>
+
+<body ng-app="starter" ng-controller="MainCtrl">
+    <ion-header-bar align-title="left" class="bar-positive custom-color" style="border-bottom:0px;">
+          <h1 class="title">{{title}}</h1>
+          <div class="buttons">
+            <button class="button button-clear" style="margin-right:20px;font-size:20px;"><i class='ion-search'></i></button>
+            <button class="button button-clear" style="margin-right:20px;font-size:20px;"><i class='ion-android-notifications-none'></i></button>
+            <!-- <button class="button button-icon" ng-click="show()"><i class="icon ion-android-more-vertical"></i></button>  -->
+            <button class="button button-clear" ng-click="popover.show($event)" style="margin-right:5px;font-size:25px;"><i class='ion-android-more-vertical'></i>
+        </button>
+          </div>
+    </ion-header-bar>
+    <ion-view>
+    <ion-content scroll="false">
+    <ion-slide-box slide-tabs-scrollable="false" show-pager="false" ion-slide-tabs>
+        <ion-slide ion-slide-tab-label="<i class='ion-android-home'></i>">
+         <ion-scroll direction="y" style="height: 100%">
+             <ion-refresher pulling-text="Pull to refresh..." on-refresh="doRefresh()"></ion-refresher>
+          <div class="list">
+            <a style="padding-bottom:0px;"class="item item-avatar" ng-click="goacr()" >
+              
+              <img ng-src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/12122503_10201223200179799_8619187008466536527_n.jpg?oh=5be0a693f71fe41868e1608f8e372e55&oe=57208040&__gda__=1457570581_cb95e73db6cbe2d50d9bc28f011969c7">
+              <div class="row">
+                <div class="col-90">
+                    <h4 style="padding-left:60px;">Nopadol Sooktieb</h4>
+                    <p style="padding-left:60px;"> ปั่นไปคณะดีกว่า </p>
+                </div>
+                <div class="col-10">
+                    <label style="margin-top:-10px;margin-left:-8px;"class="checkbox checkbox-like">
+                        <input type="checkbox" ng-click="like(item); $event.stopPropagation();" ng-model="item.like1">
+                    </label>
+                    <p style="margin-top:-10px;font-size:10px;">17.23</p>
+                </div>
+              </div>
+              <div class="row" style="padding-top:10px; margin-left:-9px;">
+                <div class="col">
+                  <p style="color:green; font-size:15px;"><i class='ion-arrow-right-b'></i>
+                  <span style="padding-left:2px; color:black; font-size:15px;">RNP</span></p>
+                  <p style="padding-left:12px; font-size:12px;">Ladkrabang, Bangkok</p>
+
+                </div>
+                <div class="col">
+                   <p style="color:red; font-size:15px;"><i class='ion-arrow-right-b'></i>
+                   <span style="padding-left:2px; color:black; font-size:15px;">IT KMITL</span></p>
+                   <p style="padding-left:12px; font-size:12px;">Ladkrabang, Bangkok</p>
+                </div>
+              </div>
+              <!-- <div class="row">
+                <div class="col">
+                    <h4 style="font-size:10px; color:grey;" align="center">TIME</i></h4>
+                    <h4 style="font-size:15px; color:grey;" align="center"> 32 <span>s</span> </h4>
+                </div>
+                <div class="col">
+                    <h4 style="font-size:10px; color:grey;" align="center">DISTANCE</h4>
+                    <h4 style="font-size:15px; color:grey;" align="center"> 120 <span>m</span> </h4>
+                </div>
+                <div class="col">
+                    <h4 style="font-size:10px; color:grey;" align="center">AVG.SPEED</h4>
+                    <h4 style="font-size:15px; color:grey;" align="center"> 7 <span>km/h</span>  </h4>
+                </div>
+              </div> -->
+            </a>
+            <a style="padding-bottom:0px;"class="item item-avatar" href="#" >
+              <img ng-src="https://scontent-sin1-1.xx.fbcdn.net/hphotos-xpl1/v/t1.0-9/12079442_1069109349774076_6308384678668705096_n.jpg?oh=fd20383f25191bb5588020ae7b735145&oe=56E049C6">
+              <div class="row">
+                <div class="col-90">
+                    <h4 style="padding-left:60px;">Warkorn Weerathammo</h4>
+                    <p style="padding-left:60px;">ทางไกล แต่ใจสู้</p>
+                </div>
+                <div class="col-10">
+                    <label style="margin-top:-10px;margin-left:-8px;"class="checkbox checkbox-like">
+                        <input type="checkbox" ng-click="like(); $event.stopPropagation();" ng-model="item.like2">
+                    </label>
+                    <p style="margin-top:-10px;font-size:10px;">19.12</p>
+                </div>
+              </div>
+              
+                  <p style="padding-top:10px; color:blue; font-size:15px;"><i class='ion-flag'></i>
+                  <span style="padding-left:2px; color:black; font-size:15px;">Sky Lane Suwannabhumi</span></p>
+                  <p style="padding-left:17px;padding-bottom:10px; font-size:12px;">Bang pli, Samut Prakarn</p>              
+            </a>
+
+          </div>
+          <!-- <ion-infinite-scroll on-infinite="loadMore()" distance="1%"></ion-infinite-scroll> -->
+
+
+        </ion-scroll>
+
+        <div class="float-button" ng-click="chooseroutes()">
+            <span class="height-fix">
+             <a class="content">
+              <i class="ion-android-bicycle"> </i>
+             </a>
+            </span>
+          </div>
+        </ion-slide>
+        <ion-slide ion-slide-tab-label="<i class='ion-trophy'></i>">
+          <ion-header-bar align-title="left" class="bar-header bar-calm custom-bar">
+            <h4 style="color:white;font-size:14px;" class="title">คะแนนผู้นำ</h4>
+            <div class="buttons">
+            <button class="button button-clear" style="font-size:14px;" ng-click="goroute()">อันดับของเส้นทาง <i class='ion-chevron-right'></i></button>
+          </div>
+          </ion-header-bar>
+          <ion-scroll direction="y" style="height: 100%">
+          <div class="list">
+            <a class="item item-avatar" href="#" >
+
+              <img style="margin-left:20px;top:10px;"ng-src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/12122503_10201223200179799_8619187008466536527_n.jpg?oh=5be0a693f71fe41868e1608f8e372e55&oe=57208040&__gda__=1457570581_cb95e73db6cbe2d50d9bc28f011969c7">
+              <div class="row">
+                <div class="col-10">
+                    <h4 style="margin-left:-10px;font-size:20px;color:red;">#1</h4>
+                </div>
+                <div class="col-80">
+                    <h4 style="padding-left:35px;font-size:17px;">Nopadol Sooktieb</h4>
+                </div>
+                <div class="col-30">
+                    <h4 style="font-size:20px;color:grey;">120</h4>
+                </div>
+              </div>
+            </a>
+
+            <a class="item item-avatar" href="#" >
+
+              <img style="margin-left:20px;top:10px;"ng-src="https://scontent-sin1-1.xx.fbcdn.net/hphotos-xpl1/v/t1.0-9/12079442_1069109349774076_6308384678668705096_n.jpg?oh=fd20383f25191bb5588020ae7b735145&oe=56E049C6">
+              <div class="row">
+                <div class="col-10">
+                    <h4 style="margin-left:-10px;font-size:20px;color:red;">#2</h4>
+                </div>
+                <div class="col-80">
+                    <h4 style="padding-left:35px;font-size:17px;">Warakorn Weerathammo</h4>
+                </div>
+                <div class="col-30">
+                    <h4 style="font-size:20px;color:grey;">113</h4>
+                </div>
+              </div>
+            </a>
+
+          </div>
+          <!-- <ion-infinite-scroll on-infinite="loadMore()" distance="1%"></ion-infinite-scroll> -->
+
+
+        </ion-scroll>
+        </ion-slide>
+        <ion-slide ion-slide-tab-label="<i class='ion-android-people'></i>">
+          <ion-scroll direction="y" style="height: 100%">
+          <div class="list">
+            <a class="item item-avatar" ng-click="gogroup()" >
+
+              <img ng-src="http://www.uppic.org/thumb-9B51_566BD6A2.jpg">
+              <div class="row">
+                <div class="col-90">
+                    <h4 style="padding-left:60px;font-size:14px;">IT KMITL </h4>
+                    <p style="padding-left:60px;">กลุ่มคนปั่นจักรยานแห่งคณะแห่งไอที</p>
+                </div>
+                <div class="col-10">
+                    <button ng-click="addclick()" class="button button-clear button-positive" style="margin-left:-5px;font-size:20px;color:{{btncolor}};"ng-disabled="{{buttonDisable}}">
+                    <i class='{{buttonType}}'></i></button>
+                </div>
+              </div>
+            </a>
+            <a class="item item-avatar" href="#" >
+
+              <img ng-src="http://4.bp.blogspot.com/-lCFm7k77CNE/Ty0jEGCvNiI/AAAAAAAAAiM/MmFAlbp0rhM/s1600/kmitl+train.jpg">
+              <div class="row">
+                <div class="col-90">
+                    <h4 style="padding-left:60px;font-size:14px;">KMITL</h4>
+                    <p style="padding-left:60px;">เด็กลาดกระบังปั่นจักรยาน</p>
+                </div>
+                <div class="col-10">
+                    <button ng-click="addclick()" class="button button-clear button-positive" style="margin-left:-5px;font-size:20px;color:{{btncolor}};"ng-disabled="{{buttonDisable}}">
+                    <i class='{{buttonType}}'></i></button>
+                </div>
+              </div>
+            </a>
+            <a class="item item-avatar" href="#" >
+
+              <img ng-src="http://www.siamsport.co.th/_PicOther/O130321I5O7N.jpg">
+              <div class="row">
+                <div class="col-90">
+                    <h4 style="padding-left:60px;font-size:14px;">ชมรมสองขานักถีบ</h4>
+                    <p style="padding-left:60px;">ชมรมคนปั่นจักรยาน</p>
+                </div>
+                <div class="col-10">
+                    <button ng-click="addclick()" class="button button-clear button-positive" style="margin-left:-5px;font-size:20px;color:{{btncolor}};"ng-disabled="{{buttonDisable}}">
+                    <i class='{{buttonType}}'></i></button>
+                </div>
+              </div>
+            </a>
+    
+
+          </div>
+        </ion-scroll>
+        <div class="float-button" style="background-color:red;" ng-click="addgroups()">
+            <span class="height-fix">
+             <a class="content">
+              <i class="ion-android-add"> </i>
+             </a>
+            </span>
+          </div>
+        </ion-slide>
+        <ion-slide ion-slide-tab-label="<i class='ion-person'></i>">
+          <div class="profile">
+              <img class="profilepicture" ng-src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/12122503_10201223200179799_8619187008466536527_n.jpg?oh=5be0a693f71fe41868e1608f8e372e55&oe=57208040&__gda__=1457570581_cb95e73db6cbe2d50d9bc28f011969c7">
+              <h4 align="center" style="margin-top:-35px;padding-bottom:10px;">Nopadol Sooktieb<h>
+          </div >
+
+          <div class="row">
+            <div class="col-50" >
+              <h4 style="color: #FF5722;font-size:14px;margin-top:0px;" align="center">3</h4>
+              <h4 style="color: #FF5722;font-size:14px;margin-top:-12px;border-bottom:2px;" align="center">Friends</h4>
+            </div>
+            <div class="col-50">
+              <h4 style="color: #FF5722;margin-top:5px;" align="center">Find Friends</h4>
+            </div>
+            
+          </div>
+          <div class ="row" style="padding-top:1px;">
+            <div class="col-33">
+              <h4 align="center" style="font-size:15px;"> All Time </h4>
+              <h4 align="center" style="font-size:15px;"> 3.23 h </h4>
+            </div>
+            <div class="col-33">
+              <h4 align="center" style="font-size:15px;"> All Distance </h4>
+              <h4 align="center" style="font-size:15px;"> 60 km </h4>
+            </div>
+            <div class="col-33">
+              <button class="button button-clear statbtn" ng-click="gostat()"><i class='ion-stats-bars'></i></button>            
+            </div>
+          </div>
+          <div class="list">
+              <a class="item" ng-click="gorca()">
+                  <i class='ion-android-list' style="font-size:20px;" ></i>&nbsp;&nbsp;&nbsp;&nbsp;Recent Activites
+              </a>
+              <a class="item">
+                  <i class='ion-ribbon-a' style="font-size:20px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Challenges
+              </a>
+              <a class="item">
+                  <i class='ion-ios-people' style="font-size:20px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Groups
+              </a>
+              <a class="item">
+                  <i class='ion-pie-graph' style="font-size:20px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Statistics
+              </a>
+              <a class="item">
+                  <i class='ion-trophy' style="font-size:20px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Trophys
+              </a>
+          </div>
+           
+        </ion-slide>
+    </ion-slide-box>
+
+    
+          
+    </ion-content>
+    </ion-view>
+    <script id="templates/popover.html" type="text/ng-template">
+      <ion-popover-view>
+        <ion-content>
+          <div class="list">
+            <a class="item" ng-click="toAlert()" target="_blank" style="font-size:15px;padding-top:5px;padding-bottom:5px;">
+              Refresh
+            </a>
+            <a class="item" ng-click="tosetting()" target="_blank" style="font-size:15px;padding-top:5px;padding-bottom:5px;">
+              Setting
+            </a>
+            <a class="item" ng-click="logout()" target="_blank" style="font-size:15px;padding-top:5px;padding-bottom:5px;"> 
+              Logout
+            </a>
+          </div>
+        </ion-content>
+      </ion-popover-view>
+    </script>
+</body>

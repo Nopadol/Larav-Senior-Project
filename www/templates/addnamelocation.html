@@ -1,0 +1,60 @@
+<link rel="stylesheet" type="text/css" href="css/addlocation.css">
+<link rel="stylesheet" type="text/css" href="lib/Ionicons/css/ionicons.css">
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDl-wSDkb6f6k3InFqvaZnwLIX7Ruo3yus&sensor=true"></script>
+<body ng-app="starter" ng-controller="anlCtrl">
+<ion-header-bar align-title="left" class="bar customcolor" style="border-bottom:0px;" >
+          <div class="buttons">
+            <button class="button button-clear" ng-click="goMain()" style="font-size:30px;color:white;"><i class='ion-arrow-left-c'></i></button>
+          </div>
+          <h4 class ="title" style="margin-left:10px;color:white;font-size:20px;">Add Name Location</h4>
+          
+
+    </ion-header-bar>
+    <div class="bar bar-subheader bar-positive custom-subheader-bar ">
+         
+              <div class="row">
+               		<div class="col-40">
+               			<h4 style="margin-left:10px;font-size:15px;">Name</h4>
+               		</div>
+               		<div class="col-60">
+               			<label class="item item-input" style="margin-left:30px;width:250px;height:35px;border-radius:5px;">
+						    <input type="text" placeholder="Name">
+						</label>
+               		</div>
+               </div>
+               <div class="row">
+               		<div class="col-40">
+               			<h4 style="margin-left:10px;font-size:15px;">City</h4>
+               		</div>
+               		<div class="col-60">
+               			<label class="item item-input" style="margin-left:45px;width:250px;height:35px;border-radius:5px;">
+						    <input type="text" placeholder="City">
+						</label>
+					</div>
+               	</div>
+               	<div class="row">
+               		<div class="col-40">
+               			<h4 style="margin-left:10px;font-size:15px;">State</h4>
+               		</div>
+               		<div class="col-60">
+               			<label class="item item-input" style="margin-left:38px;width:250px;height:35px;border-radius:5px;">
+						    <input type="text" placeholder="State">
+						</label>
+               	</div>
+               </div>
+               	<div class="row">
+               		<div class="col-40">
+               			<h4 style="margin-left:10px;font-size:15px;">Zip Code</h4>
+               		</div>
+               		<div class="col-60">
+               			<label class="item item-input" style="margin-left:10px;width:200px;height:35px;border-radius:5px;">
+						    <input type="text" placeholder="Zip Code">
+						</label>
+               	</div>
+               </div>
+               <button class="button button button-positive custombtn" style="margin-top:10px;margin-left:40%;font-size:20px;">Save</button>
+
+   </div>
+   <div ng-controller="MapCtrl" id="map" data-tap-disabled="true">
+   </div>
+</body>

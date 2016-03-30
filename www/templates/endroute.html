@@ -1,0 +1,75 @@
+<link rel="stylesheet" type="text/css" href="css/endroute.css">
+<link rel="stylesheet" type="text/css" href="lib/Ionicons/css/ionicons.css">
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDl-wSDkb6f6k3InFqvaZnwLIX7Ruo3yus&sensor=true"></script>
+<body ng-app="starter" ng-controller="chooseRouteCtrl">
+	<ion-header-bar align-title="left" class="bar customcolor" style="border-bottom:0px;" >
+          <div class="buttons">
+            <button class="button button-clear" ng-click="goMain()" style="font-size:30px;color:white;"><i class='ion-arrow-left-c'></i></button>
+          </div>
+          <h4 class ="title" style="margin-left:10px;color:white;font-size:20px;"></h4>
+          <button class="button button-clear" ng-click="goMain()" style="font-size:25px;color:white;"><i class='ion-close-round'></i></button>
+          
+
+    </ion-header-bar>
+    <div class="bar bar-subheader bar-positive custom-subheader-bar ">
+        <li style="border:0px;background:transparent;"class="item item-avatar" >
+              
+              <img ng-src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/12122503_10201223200179799_8619187008466536527_n.jpg?oh=5be0a693f71fe41868e1608f8e372e55&oe=57208040&__gda__=1457570581_cb95e73db6cbe2d50d9bc28f011969c7"style="margin-top:-10px;">
+               <p style="margin-top:-5px;padding-left:70px;color:white; font-size:20px;">FROM
+                  <span style="padding-left:2px; color:black; font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RNP</span></p>
+               <p style="padding-left:70px;color:white; font-size:20px;">TO
+                   <span style="padding-left:2px; color:black; font-size:20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IT KMITL</span></p>
+          </li>
+          <div class="row">
+              <div class="col-33">
+               <h4 style="margin-top:5px;font-size:20px;padding-bottom:10px;color:white;"align="center"><i class='ion-android-time'></i></h4>
+               <h4 style="margin-top:-5px;font-size:20px;padding-bottom:10px;"align="center">10 : 00 m</h4>
+              </div>
+              <div class="col-33">
+               <h4 style="margin-top:5px;font-size:20px;padding-bottom:10px;color:white;"align="center"><i class='ion-map'></i></h4>
+               <h4 style="margin-top:-5px;font-size:20px;padding-bottom:10px;"align="center">300 m</h4>
+
+              </div>
+              <div class="col-33">
+                <h4 style="margin-top:5px;font-size:20px;padding-bottom:10px;color:white;"align="center"><i class='ion-ribbon-a'></i></h4>
+               <h4 style="margin-top:-5px;font-size:20px;padding-bottom:10px;"align="center">1</h4>
+              </div>
+          </div>
+               
+
+   </div>
+   <div class="routeinfo">
+        
+           
+           <h4 style="padding-top:120px;font-size:15px;padding-bottom:10px;margin-top: 40px;"align="center"></h4>
+     </div >
+   </div>
+   <div class="bodys">
+       
+        <label class="item item-input" style="margin-left:20px;margin-top:10pxbackground-color: transparent !important;border:0px;width:90%;height:auto;">
+      <input type="text" placeholder="How do you feel ? :)">
+      </label>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      
+      
+      <button class="button button-outline custombtnshare"  style="margin-left:170px;font-size:25px;color:black;"><i class='ion-social-facebook-outline'></i></button>
+      <button class="button button-outline custombtnshare"  style="font-size:25px;color:black;"><i class='ion-social-twitter-outline'></i></button>
+      <button class="button button-outline custombtnshare"  style="font-size:25px;color:black;"><i class='ion-social-googleplus-outline'></i></button>
+      <div class="row">
+      <div class="col-50">
+      <button class="button button-positive"  style="margin-top:5px;margin-left:5px;font-size:15px;color:black;width:90%;border-radius:10px;background-color:#fff !important;border-color:#009688 !important;">Cancel</button>
+      </div>
+      <div class="col-50">
+      <button class="button button-positive"  style="margin-top:5px;margin-left:5px;font-size:15px;color:white;width:90%;border-radius:10px;background-color:#009688 !important;border-color:#009688 !important;">Check Route</button>
+      </div>
+      </div>
+
+   </div>
+
+</body>

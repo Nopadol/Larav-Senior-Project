@@ -1,0 +1,161 @@
+<link rel="stylesheet" type="text/css" href="css/statisticstyle.css">
+<link rel="stylesheet" type="text/css" href="lib/Ionicons/css/ionicons.css">
+<body ng-app="starter" ng-controller="statCtrl">
+	<ion-header-bar align-title="left" class="bar customcolor" style="border-bottom:0px;" >
+          <div class="buttons">
+            <button class="button button-clear" ng-click="goMain()" style="font-size:30px;color:white;"><i class='ion-arrow-left-c'></i></button>
+          </div>
+          <h4 style ="margin-left:10px;color:white;"> Statistic </h4>
+
+    </ion-header-bar>
+    	<ion-scroll direction="y" style="height: 100%">
+    	<div class="list">
+
+		  <div class="item item-divider">
+		   	AVG. WEEKLY ACTIVITY
+		  </div>
+
+		  <li class="item item-avatar" style="margin-bottom:-20px">
+		    <div class="row">
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;">Rides</h4>
+		    	</div>
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;text-align:right;color:grey;">3</h4>
+		    	</div>
+		    </div>
+		  </li>
+		  <li class="item item-avatar" style="margin-bottom:-20px">
+		    <div class="row">
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;">Time</h4>
+		    	</div>
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;text-align:right;color:grey;">12.00 m</h4>
+		    	</div>
+		    </div>
+		  </li>
+		  <li class="item item-avatar" style="margin-bottom:-20px">
+		    <div class="row">
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;">Distance</h4>
+		    	</div>
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;text-align:right;color:grey;">500 m</h4>
+		    	</div>
+		    </div>
+		  </li>
+		  <li class="item item-avatar" style="margin-bottom:-20px">
+		    <div class="row">
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;">Speed</h4>
+		    	</div>
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;text-align:right;color:grey;">13 km/h</h4>
+		    	</div>
+		    </div>
+		  </li>
+		  
+		  <div class="item item-divider">
+		   	YEAR-TO-DATE
+		  </div>
+		  <li class="item item-avatar" style="margin-bottom:-20px">
+		    <div class="row">
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;">Rides</h4>
+		    	</div>
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;text-align:right;color:grey;">10</h4>
+		    	</div>
+		    </div>
+		  </li>
+		  <li class="item item-avatar" style="margin-bottom:-20px">
+		    <div class="row">
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;">Time</h4>
+		    	</div>
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;text-align:right;color:grey;">3.23 h</h4>
+		    	</div>
+		    </div>
+		  </li>
+		  <li class="item item-avatar" style="margin-bottom:-20px">
+		    <div class="row">
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;">Distance</h4>
+		    	</div>
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;text-align:right;color:grey;">60 km</h4>
+		    	</div>
+		    </div>
+		  </li>
+		  <li class="item item-avatar" style="margin-bottom:-20px">
+		    <div class="row">
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;">Speed</h4>
+		    	</div>
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;text-align:right;color:grey;">19.16 km/h</h4>
+		    	</div>
+		    </div>
+		  </li>
+
+		  <div class="item item-divider">
+		   	ALL TIME
+		  </div>
+		  <li class="item item-avatar" style="margin-bottom:-20px">
+		    <div class="row">
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;">Rides</h4>
+		    	</div>
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;text-align:right;color:grey;">10</h4>
+		    	</div>
+		    </div>
+		  </li>
+		  <li class="item item-avatar" style="margin-bottom:-20px">
+		    <div class="row">
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;">Time</h4>
+		    	</div>
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;text-align:right;color:grey;">3.23 h</h4>
+		    	</div>
+		    </div>
+		  </li>
+		  <li class="item item-avatar" style="margin-bottom:-20px">
+		    <div class="row">
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;">Distance</h4>
+		    	</div>
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;text-align:right;color:grey;">60 km</h4>
+		    	</div>
+		    </div>
+		  </li>
+		  <li class="item item-avatar" style="margin-bottom:-20px">
+		    <div class="row">
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;">Speed</h4>
+		    	</div>
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;text-align:right;color:grey;">19.16 km/h</h4>
+		    	</div>
+		    </div>
+		  </li>
+
+		  <li class="item item-avatar" style="margin-bottom:-20px">
+		    <div class="row">
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;">Speed</h4>
+		    	</div>
+		    	<div class="col-50">
+		    		<h4 style="font-size:15px;text-align:right;color:grey;">19.16 km/h</h4>
+		    	</div>
+		    </div>
+		  </li>
+		</div>
+
+	</ion-scroll>
+
+</body>
